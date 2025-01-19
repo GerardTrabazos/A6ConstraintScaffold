@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "cat.dam.gerard.app"
+    namespace = "cat.dam.gerard.constraintscafold"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "cat.dam.gerard.app"
+        applicationId = "cat.dam.gerard.constraintscafold"
         minSdk = 28
         targetSdk = 35
         versionCode = 1
@@ -20,7 +20,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -32,7 +32,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "11" // Considera canviar-ho a "17"
     }
     buildFeatures {
         compose = true
@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -49,8 +48,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    // Navigation
     implementation(libs.androidx.navigation.compose)
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1") // Conserva aquesta
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -5,4 +5,5 @@ object NavigationConstants {
     const val LAYOUT2 = "layout2"
     const val LAYOUT3 = "layout3"
     const val LAYOUT4 = "layout4"
+    const val LAYOUT5 = "layout5"
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App</string>
+    <string name="red">ROJO</string>
+    <string name="orange">NARANJA</string>
+    <string name="yellow">AMARILLO</string>
+    <string name="fuchsia">FUCSIA</string>
+    <string name="blue">AZUL</string>
+    <string name="purple">MORADO</string>
+    <string name="green">VERDE</string>
+</resources>

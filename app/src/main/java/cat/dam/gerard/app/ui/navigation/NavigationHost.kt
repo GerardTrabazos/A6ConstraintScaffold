@@ -1,5 +1,6 @@
 package cat.dam.gerard.app.ui.navigation
 
+import Layout4
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -8,10 +9,11 @@ import cat.dam.gerard.app.ui.navigation.NavigationConstants.LAYOUT1
 import cat.dam.gerard.app.ui.navigation.NavigationConstants.LAYOUT2
 import cat.dam.gerard.app.ui.navigation.NavigationConstants.LAYOUT3
 import cat.dam.gerard.app.ui.navigation.NavigationConstants.LAYOUT4
+import cat.dam.gerard.app.ui.navigation.NavigationConstants.LAYOUT5
 import cat.dam.gerard.app.ui.screens.Layout1
 import cat.dam.gerard.app.ui.screens.Layout2
 import cat.dam.gerard.app.ui.screens.Layout3
-import cat.dam.gerard.app.ui.screens.Layout4
+import cat.dam.gerard.app.ui.screens.Layout5
 
 @Composable
 fun NavigationHost(navController: NavHostController) {
@@ -20,5 +22,7 @@ fun NavigationHost(navController: NavHostController) {
         composable(LAYOUT2) { Layout2() }
         composable(LAYOUT3) { Layout3() }
         composable(LAYOUT4) { Layout4() }
+        composable(LAYOUT5) { Layout5() }
+
     }
 }
